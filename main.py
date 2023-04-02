@@ -65,7 +65,7 @@ def bfs(graph, start, end):
     return False
     
     
-def check_if_same_family(graph,v1,v2):// this function checks if two people in the builded graph are related
+def check_if_same_family(graph,v1,v2):# this function checks if two people in the builded graph are related
     inverse = getInverse(graph)
     for v in graph:
         if(bfs(graph, v1, v) == bfs(graph,v2,v)):
